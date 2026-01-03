@@ -15,7 +15,10 @@ window.onload = function() {
 
   let what = ['mi tarea', 'mi telefono', 'el coche'];
 
-  let when = ['antes de clases', 'mientras dormia', 'mientras hacia ejercicio', 'durante el almuerzo', 'mientras rezaba'];
+  let when = [
+      'antes de clases', 'mientras dormia', 'mientras hacia ejercicio',
+      'durante el almuerzo', 'mientras rezaba'
+  ];
 
     //let whoAleatorio = seleccionarAleatorio(who);
     //let actionAleatorio = seleccionarAleatorio(action);
@@ -23,7 +26,8 @@ window.onload = function() {
     //let whenAleatorio = seleccionarAleatorio(when);
   let excuseElement = this.document.querySelector("#excuse");
   
-  excuseElement.innerHTML = `${seleccionarAleatorio(who)} ${seleccionarAleatorio(action)} ${seleccionarAleatorio(what)} ${seleccionarAleatorio(when)}`
+  excuseElement.innerHTML = `${seleccionarAleatorio(who)} ${seleccionarAleatorio(action)} 
+  ${seleccionarAleatorio(what)} ${seleccionarAleatorio(when)}`
 };
 
 function seleccionarAleatorio(lista) {
